@@ -1,0 +1,121 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-weight: 600;
+  line-height: 1.9;
+  background-color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ul{
+  list-style-type: none;
+
+}
+li{
+  margin-bottom: 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+}
+a{
+  text-decoration: none;
+}
+
+.container{
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 150px;
+  padding: 70px 60px;
+}
+.pricing{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+  background-color: #F3F4F6;
+  padding: 50px;
+  border-radius: 10px;
+
+}
+
+.card{
+  width: 100%;
+  margin-bottom: 50px;
+  flex: 1;
+}
+
+
+.sixmonths{
+  padding: 20px;
+  border-radius: 50px;
+  color: white;
+  background-color: #00A472;
+}
+
+.card .sixmonths sup{
+  color: white;
+}
+.card sup{
+  font-weight: 600;
+  font-size: 20px;
+  position: relative;
+  top: -10px;
+}
+.price{
+  font-weight: 700;
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.price-info{
+  margin-bottom: 30px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.main-text{
+  margin-bottom: 50px;
+  font-weight: 400;
+}
+.btn{
+  margin-bottom: 30px;
+  font-weight: 700;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #0F172A;
+  color: white;
+  transition: .1sec;
+  cursor: pointer;
+}
+
+  .btn-primary{
+  color: #00A472;
+  background-color: white;
+}
+
+.btn-primary:hover{
+  color: hwb(162 0% 40%);
+}
+
+.btn:hover:not(.btn-primary){
+  background-color: #00A472;
+}
+
+
+.card ul li{
+  font-weight: 400;
+}
+
+@media(max-width: 768px) {
+  .pricing{
+    flex-direction: column;
+  }
+
+  .container{
+    margin: 2rem;
+  }
+}
